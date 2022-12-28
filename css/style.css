@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: B;
+  src: url(../font/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: L;
+  src: url(../font/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: M;
+  src: url(../font/Montserrat-Regular.ttf);
+}
+:root {
+  --main-color: rgb(13 26 45);
+  --primary-color: rgb(21 39 63);
+  --third-color: white;
+}
+.light-theme {
+  --main-color: rgb(0 51 98);
+  --primary-color: white;
+  --third-color: #012e58;
+}
+.con {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.icons {
+  position: relative;
+  right: 17px;
+  top: -11px;
+}
+.icons .moon {
+  position: absolute;
+  display: none;
+}
+.icons .sun-icon {
+  position: absolute;
+  color: white;
+}
+body {
+  font-family: B;
+  background-color: var(--main-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Card {
+  width: 260px;
+  height: 460px;
+  padding: 20px;
+  background-color: var(--primary-color);
+  border-radius: 14px;
+  box-shadow: 1px 12px 20px 0px #00000033;
+}
+.image img {
+  border-radius: 7px;
+  width: 260px;
+  height: 240px;
+}
+.info {
+  padding-top: 10px;
+}
+.info a {
+  font-family: B;
+  color: var(--third-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+.info p {
+  font-family: M;
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-bottom: 24px;
+  color: rgb(124 148 180);
+  text-decoration: none;
+}
+.point-time {
+  display: flex;
+  justify-content: space-between;
+}
+.point {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.point h1 {
+  font-size: 13px;
+  font-family: B;
+  color: aqua;
+}
+.time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.time h2 {
+  color: rgb(124 148 180);
+  font-size: 14px;
+  font-family: M;
+}
+.account {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+}
+.account::after {
+  content: "";
+  width: 260px;
+  background-color: rgba(0, 0, 0, 0.227);
+  height: 1px;
+  top: 20px;
+  position: absolute;
+}
+.account img {
+  width: 42px;
+  height: 42px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.account h3 {
+  color: rgb(124 148 180);
+  font-family: L;
+  font-size: 14px;
+}
+.account h3 a {
+  color: var(--third-color);
+  font-family: L;
+  font-size: 13px;
+  text-decoration: none;
+}
